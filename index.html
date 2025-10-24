@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SNA Presentation | Akshay & Abdul</title>
+
+  <style>
+    /* Google Font */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+    /* Basic Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 2.3rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #e94560;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #ccc;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .btn-container {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    a.button {
+      background: #0f3460;
+      color: #fff;
+      text-decoration: none;
+      padding: 0.9rem 2rem;
+      border-radius: 50px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    a.button:hover {
+      background: #e94560;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 15px;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    /* Simple Animated Gradient */
+    body::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle at center, rgba(233,69,96,0.15) 0%, transparent 60%),
+                  radial-gradient(circle at top left, rgba(15,52,96,0.2) 0%, transparent 70%),
+                  radial-gradient(circle at bottom right, rgba(233,69,96,0.15) 0%, transparent 70%);
+      animation: move 10s ease-in-out infinite alternate;
+      z-index: 0;
+    }
+
+    @keyframes move {
+      0% { transform: translate(0,0) scale(1); }
+      100% { transform: translate(50px,50px) scale(1.05); }
+    }
+
+    main {
+      position: relative;
+      z-index: 1;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+      a.button {
+        padding: 0.8rem 1.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>SNA Presentation</h1>
+    <p>
+      <strong>Names:</strong> Akshay Prajapati & Abdul Wakil Mondal<br>
+      <strong>Roll Numbers:</strong> 205124007 & 205124001
+    </p>
+
+    <div class="btn-container">
+      <!-- Replace '#' with your actual PPT link -->
+      <a href="#" class="button" target="_blank">📘 View the PPT</a>
+
+      <!-- Demo Code Link -->
+      <a href="https://colab.research.google.com/drive/1SPl3oXz2H9WkR8yMTHgGGT4C2NVmVI9T#scrollTo=F3YF2D2X4C8v" 
+         class="button" target="_blank">💻 See the Demo of the Code</a>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Akshay & Abdul | SNA Project
+  </footer>
+</body>
+</html>
